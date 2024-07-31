@@ -178,11 +178,6 @@ picture img {
     fill: white;
 }
 
-.attribution a {
-    color: var(--very-dark-grayish-blue);
-    text-decoration: none;
-}
-
 @media (max-width: 768px) {
     main {
         flex-direction: column;
