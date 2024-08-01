@@ -112,9 +112,21 @@ picture img {
     margin-left: auto;
     position: relative;
     z-index: 1;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, border 0.3s;
 }
+
+.author button:hover {
+    border: 1px solid var(--desaturated-dark-blue);
+    transform: scale(1.1); 
+}
+
 .author button img {
     margin-left: 1rem;
+}
+
+.author button img:hover {
+    color: white;
 }
 
 .links {

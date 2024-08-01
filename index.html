@@ -69,7 +69,7 @@
 
   <script>
     document.querySelector('.author button').addEventListener('click', function() {
-      var links = document.querySelector('.links');
+      let links = document.querySelector('.links');
       if (links.classList.contains('show')) {
           links.classList.remove('show');
           setTimeout(() => { links.style.display = 'none'; }, 300); // Wait for animation to complete
@@ -78,7 +78,7 @@
           setTimeout(() => { links.classList.add('show'); }, 10); // Allow display to be set before starting animation
       }
         
-        var currentUrl = "https://dquinn089.github.io/frontend-mentor-article-preview/"; // Assigns URL to variable
+        let currentUrl = "https://dquinn089.github.io/frontend-mentor-article-preview/"; // Assigns URL to variable
 
         // Takes currentUrl and pastes in share pages automatically
         document.getElementById('facebook-share').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(currentUrl);
